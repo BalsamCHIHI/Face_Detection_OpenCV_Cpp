@@ -2,10 +2,10 @@
 Face Detection using Haar Cascades
 
 
-all steps needes to recompile the project from source code are available bellow.
+all steps needed to recompile the project from source code are available bellow.
 
 
-this projet is coded in C++, tested and running perfectly using :
+this project is coded in C++, tested and running perfectly using :
 
 - Microsoft Windows 10
 
@@ -14,7 +14,7 @@ this projet is coded in C++, tested and running perfectly using :
 - OpenCV 3.4.5
 
 
-let me know if you experience issues trying to compile and run this projet on different environments and you need help.
+let me know if you experience issues trying to compile and run this project on different environments and you need help.
 
 
 you could import the project directly after extracting the .ZIP file the RUN it
@@ -25,25 +25,25 @@ or
 
 setup steps from scratch :
 
-1- install Visual Studio 2017 using Visual Studio Installer and choose the option that makes it ready for C++ developement
+1- install Visual Studio 2017 using Visual Studio Installer and choose the option that makes it ready for C++ development
 
 2- install OpenCV 3.4.5 at c:\opencv
 
 3- launch Visual Studio 2017 and choose New Project/Solution, under Visual C++, select Windows Console Application
 
-4- configure your just created project to be ready to use previusly installed OpenCV libraries :
+4- configure your just created project to be ready to use previously installed OpenCV libraries :
 
-    a- set your buid config to Debug and Platform to x64 from toolbar
+    a- set your build config to Debug and Platform to x64 from toolbar
     
     b- edit your project properties to :
     
         i- general => target platform version = "10"
         
-        ii- c/c++ => general => additionnal include directories = "C:\opencv\build\include"
+        ii- c/c++ => general => additional include directories = "C:\opencv\build\include"
         
-        iii- linker => general => additionnal library directories = "C:\opencv\build\x64\vc15\lib"
+        iii- linker => general => additional library directories = "C:\opencv\build\x64\vc15\lib"
         
-        iv- linker => input => additionnal dependecies = "opencv_world345d.lib"
+        iv- linker => input => additional dependencies = "opencv_world345d.lib"
         
 5- copy "haarcascade_frontalface_alt.xml" to project directory where your "<project_name>.cpp" resides
 
